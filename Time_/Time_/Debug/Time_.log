@@ -1,0 +1,8 @@
+﻿  AnClock.cpp
+c:\users\hexip\documents\projects\sfml\unioop\time_\time_\anclock.h(10): error C2143: syntax error: missing ';' before '*'
+c:\users\hexip\documents\projects\sfml\unioop\time_\time_\anclock.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\hexip\documents\projects\sfml\unioop\time_\time_\anclock.h(10): error C2238: unexpected token(s) preceding ';'
+  gameManager.cpp
+c:\users\hexip\documents\projects\sfml\unioop\time_\time_\gamemanager.cpp(84): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  main.cpp
+  Generating Code...
