@@ -1,6 +1,6 @@
 #include<SFML/Graphics.hpp>
-#include "AnClock.h"
 #include"ClockTime.h"
+#include "AnClock.h"
 
 
 void AnClock::setHandRotations()

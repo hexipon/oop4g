@@ -8,5 +8,5 @@ void RandomNumberGenerator::seed() const
 int RandomNumberGenerator::getRandomValue(int max) const
 //produce a random number in range [1..max]
 {
-	return (rand() % max) + 1;
+	return (rand() % max);
 }

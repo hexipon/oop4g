@@ -3,8 +3,10 @@
 #include"ClockTime.h"
 #include"DigClock.h"
 #include"AnClock.h"
-#include "gameManager.h"
+#include<ctime>
 #include<random>
+#include <assert.h>
+#include "gameManager.h"
 
 
 void gameManager::winSetup()
@@ -14,7 +16,8 @@ void gameManager::winSetup()
 
 void gameManager::sfEventUpdate()
 {
-	while (window.pollEvent(sfEvent))
+	if(window.pollEvent(sfEvent))
+	//while (window.pollEvent(sfEvent))
 	{
 		if ((sfEvent.type == sf::Event::KeyPressed && sfEvent.key.code == sf::Keyboard::Escape) || (sfEvent.type == sf::Event::Closed))
 			window.close();
@@ -24,7 +27,10 @@ void gameManager::sfEventUpdate()
 void gameManager::deltaTimeUpdate()
 {
 
-	deltaTime = clock.restart().asSeconds();
+	//deltaTime = clock.getElapsedTime().asSeconds();
+	//clock.restart();
+	assert(deltaTime > 0);
+	//deltaTime = 1.f / 60;
 }
 
 void gameManager::update()
@@ -52,7 +58,6 @@ gameManager::gameManager() : digClock(correctTime, sf::Vector2f(1,1))
 	//game setup
 	winSetup();
 	//Setup text
-	sf::Font textFont;
 	if (!textFont.loadFromFile("Retro.ttf"))
 		throw("cannot find digital clock text file");
 	topText.setFont(textFont);
@@ -64,18 +69,19 @@ gameManager::gameManager() : digClock(correctTime, sf::Vector2f(1,1))
 	correctTime.setTime(randTime());
 	//setup digital clock
 	//digClock = new DigClock(correctTime, sf::Vector2f(1,1));
-	sf::Font digFont;
 	if (!digFont.loadFromFile("digital-7.ttf"))
 		throw("cannot find digital clock text file");
 	digClock.init(digFont);
 	//setup analogue clocks
-
+	sf::Clock clock;
 	//game loop
 	while (window.isOpen())
 	{
-		deltaTimeUpdate();
+		//deltaTimeUpdate();
+		deltaTime = clock.getElapsedTime().asSeconds();
 		update();
 		render();
+		clock.restart();
 	}
 }
 

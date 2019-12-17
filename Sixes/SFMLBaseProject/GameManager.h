@@ -4,26 +4,41 @@
 #include"State.h"
 #include"NameInput.h"
 #include"End.h"
+
+/*
+explain what it does, anything non-obvious
+*/
 class GameManager
 {
 private:
 	sf::RenderWindow window;
-	std::stack<State*> states;
-	std::vector<sf::Text> lines;
+	std::stack<State*> states;		//explain choice of container?
+	std::vector<sf::Text> lines;		
 	sf::Font font;
 	sf::String playerName;
 	sf::String numInput;
 	sf::Event sfEvent;
 	int score;
+	
+	
 	void fontSetup();
 	void windowSetup();
 	void sfEventUpdate();
 	void start();
 	void update();
 	void render();
+	/*
+	?
+	*/
 	void startState();
+	/*
+	explain what this does?
+	*/
 	void nextScene(const int& sceneNum);
 	void numScene();
+	/*
+	?
+	*/
 	void sortLines();
 	void rollDice();
 public:

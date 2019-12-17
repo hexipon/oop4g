@@ -2,6 +2,8 @@
 #include <iomanip>      // std::setw
 #include <sstream>      // std::ostringstream
 #include<stack>
+#include<random>
+#include<ctime>
 #include"ClockTime.h"
 #include"DigClock.h"
 #include"AnClock.h"
