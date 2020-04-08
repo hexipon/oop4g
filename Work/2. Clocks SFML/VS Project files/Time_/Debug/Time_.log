@@ -1,0 +1,8 @@
+﻿  AnClock.cpp
+c:\users\b8010687\documents\oop4g-p4g\work\2. clocks sfml\time_\time_\anclock.cpp(55): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  DigClock.cpp
+  gameManager.cpp
+  main.cpp
+  Time.cpp
+  Generating Code...
+  Time_.vcxproj -> C:\Users\b8010687\Documents\OOP4G-P4G\Work\2. Clocks SFML\Time_\Debug\Time_.exe
