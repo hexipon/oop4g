@@ -1,5 +1,6 @@
 #pragma once
 #include"State.h"
+#include"D3D.h"
 class NameInput : public State
 {
 private:

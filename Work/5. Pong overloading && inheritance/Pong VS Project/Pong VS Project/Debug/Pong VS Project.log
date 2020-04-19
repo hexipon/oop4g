@@ -1,0 +1,16 @@
+﻿  Game.cpp
+c:\users\b8010687\documents\github\oop4g\work\5. pong overloading && inheritance\pong vs project\pong vs project\score.h(24): warning C4244: 'argument': conversion from 'const float' to 'unsigned int', possible loss of data
+c:\users\b8010687\documents\github\oop4g\work\5. pong overloading && inheritance\pong vs project\pong vs project\menu.h(7): warning C4091: 'static ': ignored on left of 'const _Menu::menutype' when no variable is declared
+c:\users\b8010687\documents\github\oop4g\work\5. pong overloading && inheritance\pong vs project\pong vs project\game.cpp(39): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+  GameManager.cpp
+c:\users\b8010687\documents\github\oop4g\work\5. pong overloading && inheritance\pong vs project\pong vs project\menu.h(7): warning C4091: 'static ': ignored on left of 'const _Menu::menutype' when no variable is declared
+c:\users\b8010687\documents\github\oop4g\work\5. pong overloading && inheritance\pong vs project\pong vs project\score.h(24): warning C4244: 'argument': conversion from 'const float' to 'unsigned int', possible loss of data
+c:\users\b8010687\documents\github\oop4g\work\5. pong overloading && inheritance\pong vs project\pong vs project\gamemanager.cpp(5): warning C4244: 'argument': conversion from 'const float' to 'unsigned int', possible loss of data
+  Menu.cpp
+c:\users\b8010687\documents\github\oop4g\work\5. pong overloading && inheritance\pong vs project\pong vs project\menu.h(7): warning C4091: 'static ': ignored on left of 'const _Menu::menutype' when no variable is declared
+c:\users\b8010687\documents\github\oop4g\work\5. pong overloading && inheritance\pong vs project\pong vs project\score.h(24): warning C4244: 'argument': conversion from 'const float' to 'unsigned int', possible loss of data
+  main.cpp
+c:\users\b8010687\documents\github\oop4g\work\5. pong overloading && inheritance\pong vs project\pong vs project\menu.h(7): warning C4091: 'static ': ignored on left of 'const _Menu::menutype' when no variable is declared
+c:\users\b8010687\documents\github\oop4g\work\5. pong overloading && inheritance\pong vs project\pong vs project\score.h(24): warning C4244: 'argument': conversion from 'const float' to 'unsigned int', possible loss of data
+  Generating Code...
+  Pong VS Project.vcxproj -> C:\Users\b8010687\Documents\GitHub\oop4g\Work\5. Pong overloading && inheritance\Pong VS Project\Debug\Pong VS Project.exe

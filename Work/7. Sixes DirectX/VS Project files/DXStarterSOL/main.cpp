@@ -1,27 +1,7 @@
-#include <windows.h>
-#include <string>
-#include <cassert>
-#include <d3d11.h>
-#include <iomanip>
 #include<stack>
-#include<vector>
-#include<string>
 #include "WindowUtils.h"
-#include "D3DUtil.h"
 #include "D3D.h"
-#include "SimpleMath.h"
-#include "SpriteFont.h"
-#include"State.h"
 #include"Game.h"
-#include"DiceGame.h"
-#include"nameInput.h"
-#include"End.h"
-
-namespace
-{
-	Game *game = nullptr;
-	MyD3D *d3d = nullptr;
-};
 
 void OnResize(int screenWidth, int screenHeight, MyD3D& d3d)
 {
@@ -29,22 +9,19 @@ void OnResize(int screenWidth, int screenHeight, MyD3D& d3d)
 }
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
-
-
-	//auto game = reinterpret_cast<Game*>(GetWindowLongPtr(hWnd, GWLP_USERDATA));
 	int nSc;
 	switch (message)
 	{
 	case WM_CHAR:
-			game->states.top()->updateInput(wParam);
+			Game::Instance().states.top()->updateInput(wParam);
 		switch (wParam)
 		{
 		case 8:
-			game->states.top()->backspace();
+			Game::Instance().states.top()->backspace();
 			break;
 		case 13:
-			nSc = game->states.top()->getNextScene();
-			game->nextScene(*d3d,nSc);
+			nSc = Game::Instance().states.top()->getNextScene();
+			Game::Instance().nextScene(MyD3D::Instance(),nSc);
 			break;
 		case 27:
 		case 'q':
@@ -61,15 +38,13 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance,
 	PSTR cmdLine, int showCmd)
 {
 	int w(1024), h(768);
-	if (!WinUtil::Get().InitMainWindow(w, h, hInstance, "Fezzy", WndProc, true))
+	if (!WinUtil::Get().InitMainWindow(w, h, hInstance, "Sixes", WndProc, true))
 		assert(false);
 
-	d3d = new MyD3D;
-	if (!d3d->InitDirect3D(OnResize))
+	if (!MyD3D::Instance().InitDirect3D(OnResize))
 		assert(false);
-	WinUtil::Get().SetD3D(*d3d);
-	game = new Game();
-	game->init(*d3d);
-	d3d->ReleaseD3D(true);
+	WinUtil::Get().SetD3D(MyD3D::Instance());
+	Game::Instance().init(MyD3D::Instance());
+	MyD3D::Instance().ReleaseD3D(true);
 	return 0;
 }

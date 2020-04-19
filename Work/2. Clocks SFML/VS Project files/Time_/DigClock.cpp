@@ -1,6 +1,8 @@
 #include "DigClock.h"
-void DigClock::init(const sf::Font& font)
+void DigClock::init()
 {
+	if (!font.loadFromFile("digital-7.ttf"))
+		throw("cannot find digital clock text file");
 	if (!tex.loadFromFile("digital_clock.png"))
 		throw("Error loading digital clock texture!");
 	baseImg.setTexture(tex);

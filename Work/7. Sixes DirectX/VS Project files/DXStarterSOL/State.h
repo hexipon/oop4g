@@ -1,4 +1,6 @@
 #pragma once
+#include<string>
+#include"D3D.h"
 class State
 {
 protected:

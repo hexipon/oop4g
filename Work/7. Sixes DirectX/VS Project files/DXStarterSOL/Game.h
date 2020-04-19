@@ -1,10 +1,20 @@
 #pragma once
-//#define MAX_COLOURS 8 
+#include<stack>
+#include<vector>
+#include "WindowUtils.h"
+#include "D3D.h"
+#include "SimpleMath.h"
+#include "SpriteFont.h"
+#include"nameInput.h"
+#include"NumberInput.h"
+#include"DiceGame.h"
+#include"End.h"
 class Game
 {
 private:
+	Game() {}
 	float gameTime=0;
-	float dt=0; //deltatime
+	float deltaTime=0; 
 	int gCycle = 0;
 	float gResTimer = 0;
 	DirectX::SimpleMath::Vector4 gColours[8];
@@ -20,8 +30,9 @@ private:
 	std::string numInput;
 	int score;
 public:
+	static Game& Instance() { static Game game; return game; }
 	void init(MyD3D& d3d);
-	void UR(MyD3D& d3d); //update and render
+	void UpdateAndRender(MyD3D& d3d); //update and render
 	std::stack<State*> states;
 	void nextScene(MyD3D& d3d, const int &);
 

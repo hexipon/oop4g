@@ -6,6 +6,8 @@
 #include <string>
 #include <sstream>
 #include <assert.h>
+#include <cassert>
+
 
 class MyD3D;
 

@@ -13,13 +13,11 @@ gameManager::gameManager() : digClock(correctTime, sf::Vector2f(300, 0))
 	topText.setString("Time to play?");
 	bottomText.setPosition(200, 800);
 	//setup analogue clocks
-	anClocks[0] = new AnClock(1, sf::Vector2f(0, 200), textFont);
-	anClocks[1] = new AnClock(2, sf::Vector2f(300, 200), textFont);
-	anClocks[2] = new AnClock(3, sf::Vector2f(600, 200), textFont);
+	anClocks[0] = new AnClock(1, sf::Vector2f(0, 200));
+	anClocks[1] = new AnClock(2, sf::Vector2f(300, 200));
+	anClocks[2] = new AnClock(3, sf::Vector2f(600, 200));
 	//setup digital clock
-	if (!digFont.loadFromFile("digital-7.ttf"))
-		throw("cannot find digital clock text file");
-	digClock.init(digFont);
+	digClock.init();
 	setClocks();
 
 }

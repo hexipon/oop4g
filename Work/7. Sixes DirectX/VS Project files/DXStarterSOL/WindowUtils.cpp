@@ -1,10 +1,7 @@
 
-#include <cassert>
-
 #include "WindowUtils.h"
 #include "D3D.h"
 #include "D3DUtil.h"
-
 using namespace std;
 
 

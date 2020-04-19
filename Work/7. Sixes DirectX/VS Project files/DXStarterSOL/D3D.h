@@ -1,8 +1,11 @@
 #ifndef D3DH
 #define D3DH
 
+#include <vector>
+#include <cassert>
 #include <d3d11.h>
 #include "SimpleMath.h"
+#include "WindowUtils.h"
 
 
 /*
@@ -11,6 +14,7 @@ Wrap up DirectX11 - the minimum bits we need to render
 class MyD3D
 {
 public:
+	static MyD3D& Instance() { static MyD3D d3d; return d3d; }
 
 	//main start up function
 	bool InitDirect3D(void(*pOnResize)(int, int, MyD3D&));
@@ -49,6 +53,7 @@ public:
 	}
 
 private:
+	MyD3D() {}
 	//what type of gpu have we got - hopefully a hardware one
 	D3D_DRIVER_TYPE md3dDriverType = D3D_DRIVER_TYPE_UNKNOWN;
 	//texture multisampling quality level supported

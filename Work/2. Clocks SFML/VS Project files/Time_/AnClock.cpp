@@ -1,7 +1,9 @@
 #include "AnClock.h"
 
-AnClock::AnClock(const int i, const sf::Vector2f pos, const sf::Font& font) : position(pos)
+AnClock::AnClock(const int i, const sf::Vector2f pos) : position(pos)
 {
+	if (!font.loadFromFile("Retro.ttf"))
+		throw("cannot find digital clock text file");
 	clockNum.setString(std::to_string(i));
 	if (!tex.loadFromFile("clock_face.png"))
 		throw("Error loading digital clock texture!");

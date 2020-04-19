@@ -1,9 +1,6 @@
-#include <vector>
-#include <cassert>
 
-#include "D3DUtil.h"
 #include "D3D.h"
-#include "WindowUtils.h"
+#include "D3DUtil.h"
 
 using namespace std;
 using namespace DirectX;

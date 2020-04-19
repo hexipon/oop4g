@@ -18,9 +18,8 @@ private:
 	sf::Clock clock;
 	sf::Text topText;
 	sf::Text bottomText;
-	DigClock digClock;
-	sf::Font digFont;
 	sf::Font textFont;
+	DigClock digClock;
 	float deltaTime;
 
 	Time correctTime;

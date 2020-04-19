@@ -1,4 +1,5 @@
 #pragma once
+#include<string>
 #include"Dice.h"
 #include"Score.h"
 class DiceGame {

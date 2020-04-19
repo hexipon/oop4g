@@ -1,22 +1,5 @@
-#include <windows.h>
-#include <string>
-#include <cassert>
-#include <d3d11.h>
-#include <iomanip>
-#include<stack>
-#include<vector>
-#include<string>
-#include "WindowUtils.h"
-#include "D3DUtil.h"
-#include "D3D.h"
-#include "SimpleMath.h"
-#include "SpriteFont.h"
-#include"State.h"
 #include"Game.h"
-#include"DiceGame.h"
-#include"nameInput.h"
-#include"NumberInput.h"
-#include"End.h"
+#include "D3DUtil.h"
 
 void Game::nextScene(MyD3D& d3d, const int & sceneNum)
 {
@@ -77,16 +60,16 @@ void Game::init(MyD3D& d3d)
 	{
 		if (canUpdateRender)
 		{
-			UR(d3d);
+			UpdateAndRender(d3d);
 		}
 	}
 	ReleaseGame();
 }
 
-void Game::UR(MyD3D& d3d) //update and render
+void Game::UpdateAndRender(MyD3D& d3d) //update and render
 {
 	//update
-	gameTime += dt;
+	gameTime += deltaTime;
 	if (gameTime > 0.5f)
 	{
 		gCycle++;
@@ -122,7 +105,7 @@ void Game::UR(MyD3D& d3d) //update and render
 	d3d.EndRender();
 
 
-	dt = WinUtil::Get().EndLoop(canUpdateRender);
+	deltaTime = WinUtil::Get().EndLoop(canUpdateRender);
 }
 
 
