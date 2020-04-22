@@ -1,0 +1,17 @@
+﻿  Dice.cpp
+  End.cpp
+  Game.cpp
+  GameManager.cpp
+  main.cpp
+  NameInput.cpp
+  NumberInput.cpp
+  RandomNumberGenerator.cpp
+  Score.cpp
+  State.cpp
+  stdafx.cpp
+  Generating code
+  310 of 315 functions (98.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  SFMLBaseProject.vcxproj -> C:\Users\b8010687\Documents\OOP4G-P4G\Work\1. Sixes SFML\VS Project files\Release\SFMLBaseProject.exe

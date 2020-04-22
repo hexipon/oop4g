@@ -1,5 +1,0 @@
-﻿  main.cpp
-c:\users\hexip\documents\projects\sfml\unioop\sfmlbaseproject\sfmlbaseproject\stdafx.h(5): fatal error C1083: Cannot open include file: 'SFML/Audio.hpp': No such file or directory
-  stdafx.cpp
-c:\users\hexip\documents\projects\sfml\unioop\sfmlbaseproject\sfmlbaseproject\stdafx.h(5): fatal error C1083: Cannot open include file: 'SFML/Audio.hpp': No such file or directory
-  Generating Code...

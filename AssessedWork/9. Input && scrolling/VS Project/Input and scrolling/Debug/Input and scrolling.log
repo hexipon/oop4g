@@ -1,0 +1,7 @@
+﻿  Game.cpp
+  PlayState.cpp
+c:\users\b8010687\documents\github\oop4g\work\9. input && scrolling\vs project\input and scrolling\playstate.cpp(119): warning C4305: 'argument': truncation from 'double' to 'const float'
+  Source.cpp
+  Sprite.cpp
+  Generating Code...
+  Input and scrolling.vcxproj -> C:\Users\b8010687\Documents\GitHub\oop4g\Work\9. Input && scrolling\VS Project\Input and scrolling\../bin/Input and scrolling.exe

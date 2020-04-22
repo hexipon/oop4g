@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pong VS Project", "Pong VS Project\Pong VS Project.vcxproj", "{429D3AAF-5581-40CD-87D9-E68D955EAFFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{429D3AAF-5581-40CD-87D9-E68D955EAFFB}.Debug|x64.ActiveCfg = Debug|x64
+		{429D3AAF-5581-40CD-87D9-E68D955EAFFB}.Debug|x64.Build.0 = Debug|x64
+		{429D3AAF-5581-40CD-87D9-E68D955EAFFB}.Debug|x86.ActiveCfg = Debug|Win32
+		{429D3AAF-5581-40CD-87D9-E68D955EAFFB}.Debug|x86.Build.0 = Debug|Win32
+		{429D3AAF-5581-40CD-87D9-E68D955EAFFB}.Release|x64.ActiveCfg = Release|x64
+		{429D3AAF-5581-40CD-87D9-E68D955EAFFB}.Release|x64.Build.0 = Release|x64
+		{429D3AAF-5581-40CD-87D9-E68D955EAFFB}.Release|x86.ActiveCfg = Release|Win32
+		{429D3AAF-5581-40CD-87D9-E68D955EAFFB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A717F3BC-F5F4-41FE-8590-90214E16E1DE}
+	EndGlobalSection
+EndGlobal

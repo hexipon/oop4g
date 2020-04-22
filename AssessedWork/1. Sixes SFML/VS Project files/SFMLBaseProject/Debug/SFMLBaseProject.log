@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+  Dice.cpp
+  End.cpp
+  Game.cpp
+  GameManager.cpp
+  main.cpp
+  NameInput.cpp
+  NumberInput.cpp
+  RandomNumberGenerator.cpp
+  Score.cpp
+  State.cpp
+  Generating Code...
+  SFMLBaseProject.vcxproj -> C:\Users\b8010687\Documents\OOP4G-P4G\Work\1. Sixes SFML\VS Project files\Debug\SFMLBaseProject.exe
