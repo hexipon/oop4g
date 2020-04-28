@@ -304,4 +304,6 @@ void MyD3D::ReleaseD3D(bool extraReporting)
 		ReleaseCOM(pd3dDebug);
 	}
 	ReleaseCOM(mpd3dDevice);
+
+
 }

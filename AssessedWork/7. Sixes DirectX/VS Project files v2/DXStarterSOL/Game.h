@@ -21,7 +21,6 @@ private:
 	DirectX::SpriteBatch *gpSpriteBatch = nullptr;
 	bool canUpdateRender;
 
-	void ReleaseGame();
 	void numScene(MyD3D& d3d);
 	void rollDice(MyD3D& d3d);
 
@@ -35,6 +34,7 @@ public:
 	void UpdateAndRender(MyD3D& d3d); //update and render
 	std::stack<State*> states;
 	void nextScene(MyD3D& d3d, const int &);
+	void ReleaseGame();
 
 
 };

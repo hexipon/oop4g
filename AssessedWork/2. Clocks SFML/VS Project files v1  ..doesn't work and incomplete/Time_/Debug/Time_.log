@@ -1,0 +1,8 @@
+﻿  AnClock.cpp
+  ClockTime.cpp
+  DigClock.cpp
+  gameManager.cpp
+c:\users\b8010687\documents\github\oop4g\assessedwork\2. clocks sfml\vs project files (before feedback)\time_\gamemanager.cpp(90): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  main.cpp
+  Generating Code...
+  Time_.vcxproj -> C:\Users\b8010687\Documents\GitHub\oop4g\AssessedWork\2. Clocks SFML\VS Project files (before feedback)\Debug\Time_.exe

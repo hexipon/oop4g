@@ -1,24 +1,2 @@
-﻿  Animation.cpp
-  Asteroid.cpp
-  endState.cpp
-  Missile.cpp
-  d3d.cpp
-  d3dUtils.cpp
-  GameManager.cpp
-  Gamepad.cpp
-  Main.cpp
-  menuState.cpp
-  MouseKeys.cpp
-  playState.cpp
-c:\users\b8010687\documents\github\oop4g\assessedwork\10. simple scrolling shoot-em-up\vs project\vs project\playstate.cpp(150): warning C4305: 'argument': truncation from 'double' to 'const float'
-c:\users\b8010687\documents\github\oop4g\assessedwork\10. simple scrolling shoot-em-up\vs project\vs project\playstate.cpp(199): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\b8010687\documents\github\oop4g\assessedwork\10. simple scrolling shoot-em-up\vs project\vs project\playstate.cpp(201): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Score.cpp
-  Singleton.h
-  Sprite.cpp
-  TextureCache.cpp
-  WindowUtils.cpp
-  Generating Code...
-c:\users\b8010687\documents\github\oop4g\assessedwork\10. simple scrolling shoot-em-up\vs project\vs project\menustate.h(8): warning C4172: returning address of local variable or temporary: Instance
-c:\users\b8010687\documents\github\oop4g\assessedwork\10. simple scrolling shoot-em-up\vs project\vs project\endstate.h(10): warning C4172: returning address of local variable or temporary: Instance
+﻿  Main.cpp
   VS Project.vcxproj -> C:\Users\b8010687\Documents\GitHub\oop4g\AssessedWork\10. Simple scrolling shoot-em-up\VS Project\VS Project\../bin/VS Project.exe

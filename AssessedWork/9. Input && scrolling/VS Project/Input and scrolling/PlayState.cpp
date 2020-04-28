@@ -25,7 +25,7 @@ void PlayState::Update(float dTime)
 		Game::mouseAndKeyInput.IsPressed(VK_DOWN) ||
 		Game::mouseAndKeyInput.IsPressed(VK_RIGHT) ||
 		Game::mouseAndKeyInput.IsPressed(VK_LEFT) ||
-		(mouse.Length() > 0.0001f) ||
+		(mouse.Length() > 0) ||
 		Game::GamepadInput.IsConnected(0))
 	{
 		//move the ship
@@ -59,23 +59,6 @@ void PlayState::Update(float dTime)
 			pos.y = PlayArea.bottom;
 		Player.SetPosition(pos);
 	}
-}
-
-void PlayState::Render1(float dTime, DirectX::SpriteBatch& batch)
-{
-	Sprite spr(_d3d);
-	spr.SetTex(*_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "2dsprite.dds", "", true));
-	spr.SetScale(Vector2(0.25f, 0.25f));
-	spr.Draw(batch);
-
-	RECTF dim{ 0,0,1024,1024 };
-	spr.SetTexRect(dim);
-	spr.SetPosition(Vector2(100, 100));
-	spr.SetScale(Vector2(0.125f, 0.125f));
-	spr.Draw(batch);
-
-
-
 }
 
 
@@ -112,9 +95,9 @@ void PlayState::InitPlayer()
 	//load the ship
 	ID3D11ShaderResourceView *p = _d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "ship.dds");
 	Player.SetTex(*p);
-	Player.SetScale(Vector2(0.1f, 0.1f));
+	Player.SetScale(Vector2(playerScale));
 	Player.SetOrigin(Player.GetTexData().dim / 2.f);
-	Player.SetRotation(90 * 0.01745329252);
+	Player.SetRotation(playerRotation * ConvertToRads);
 	//setup play area
 	int w, h;
 	WinUtil::Get().GetClientExtents(w, h);

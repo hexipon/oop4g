@@ -26,6 +26,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		case 27:
 		case 'q':
 		case 'Q':
+			Game::Instance().ReleaseGame();
 			PostQuitMessage(0);
 			return 0;
 		}

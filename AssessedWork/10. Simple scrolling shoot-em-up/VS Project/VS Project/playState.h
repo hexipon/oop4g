@@ -29,7 +29,7 @@ public:
 	void update(const float& deltaTime, d3d& _d3d);
 	void render(d3d& d3d, DirectX::SpriteBatch& spritebatch);
 private:
-	static const int BGND_LAYERS = 3;
+	const int BGND_LAYERS = 3;
 	const float SPEED = 250;
 	const float PAD_SPEED = 5000;
 	std::vector<Asteroid> Asteroids;
