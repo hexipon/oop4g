@@ -1,4 +1,9 @@
-﻿  gameManager.cpp
+﻿  AnClock.cpp
+c:\users\hexip\documents\github\oop4g\assessedwork\2. clocks sfml\vs project files v3\time_\anclock.cpp(57): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  DigClock.cpp
+  gameManager.cpp
   main.cpp
+  Time.cpp
   Generating Code...
-  Time_.vcxproj -> C:\Users\b8010687\Documents\GitHub\oop4g\AssessedWork\2. Clocks SFML\VS Project files v3\Debug\Time_.exe
+  LINK : C:\Users\hexip\Documents\GitHub\oop4g\AssessedWork\2. Clocks SFML\VS Project files v3\Debug\Time_.exe not found or not built by the last incremental link; performing full link
+  Time_.vcxproj -> C:\Users\hexip\Documents\GitHub\oop4g\AssessedWork\2. Clocks SFML\VS Project files v3\Debug\Time_.exe

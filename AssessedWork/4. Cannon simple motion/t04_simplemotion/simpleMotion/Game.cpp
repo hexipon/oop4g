@@ -17,7 +17,7 @@ void Game::Initialise(sf::RenderWindow& window)
 	assert(mState == StateMachine::WAITING_INIT);
 	mGD.pWindow = &window;
 	//load the font
-	if (!mGD.font.loadFromFile("data/fonts/comic.ttf"))
+	if (!mGD.font.loadFromFile("../data/fonts/comic.ttf"))
 		assert(false);
 
 	//setup

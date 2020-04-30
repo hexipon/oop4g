@@ -4,7 +4,7 @@
 //a mini playable game (sort of)
 void PlayMode::Init()
 {
-	if (!CannonTex.loadFromFile("data/cannon.png"))
+	if (!CannonTex.loadFromFile("../data/cannon.png"))
 		assert(false);
 	CannonTex.setSmooth(false);
 	
@@ -17,7 +17,7 @@ void PlayMode::Init()
 	ball.SetPos(mpGun->GetPos());
 
 
-	if (!WallTex.loadFromFile("data/tiledwall.png"))
+	if (!WallTex.loadFromFile("../data/tiledwall.png"))
 		assert(false);
 	WallTex.setRepeated(true);
 	WallTex.setSmooth(true);

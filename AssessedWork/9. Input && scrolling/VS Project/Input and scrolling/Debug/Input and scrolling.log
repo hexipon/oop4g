@@ -1,2 +1,18 @@
-﻿  Gamepad.cpp
-  Input and scrolling.vcxproj -> C:\Users\b8010687\Documents\GitHub\oop4g\AssessedWork\9. Input && scrolling\VS Project\Input and scrolling\../bin/Input and scrolling.exe
+﻿  d3d.cpp
+  Game.cpp
+c:\users\hexip\documents\github\oop4g\assessedwork\9. input && scrolling\vs project\input and scrolling\playstate.h(20): warning C4305: 'initializing': truncation from 'double' to 'const float'
+c:\users\hexip\documents\github\oop4g\assessedwork\9. input && scrolling\vs project\input and scrolling\playstate.h(22): warning C4305: 'argument': truncation from 'double' to 'float'
+  Gamepad.cpp
+  MouseKeys.cpp
+  PlayState.cpp
+c:\users\hexip\documents\github\oop4g\assessedwork\9. input && scrolling\vs project\input and scrolling\playstate.h(20): warning C4305: 'initializing': truncation from 'double' to 'const float'
+c:\users\hexip\documents\github\oop4g\assessedwork\9. input && scrolling\vs project\input and scrolling\playstate.h(22): warning C4305: 'argument': truncation from 'double' to 'float'
+  Source.cpp
+c:\users\hexip\documents\github\oop4g\assessedwork\9. input && scrolling\vs project\input and scrolling\playstate.h(20): warning C4305: 'initializing': truncation from 'double' to 'const float'
+c:\users\hexip\documents\github\oop4g\assessedwork\9. input && scrolling\vs project\input and scrolling\playstate.h(22): warning C4305: 'argument': truncation from 'double' to 'float'
+  Sprite.cpp
+  TexCache.cpp
+  WinUtil.cpp
+  Generating Code...
+  LINK : ../bin/Input and scrolling.exe not found or not built by the last incremental link; performing full link
+  Input and scrolling.vcxproj -> C:\Users\hexip\Documents\GitHub\oop4g\AssessedWork\9. Input && scrolling\VS Project\Input and scrolling\../bin/Input and scrolling.exe

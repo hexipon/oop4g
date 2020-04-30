@@ -6,7 +6,7 @@ void PlayMode::Init(Game *pG)
 {
 	mpGame = pG;
 	mGun = new Gun(ball);
-	if (!mCannonTex.loadFromFile("data/cannon.png"))
+	if (!mCannonTex.loadFromFile("../data/cannon.png"))
 		assert(false);
 	mCannonTex.setSmooth(false); //it will look gnarly when it turns otherwise, try it. Probably using anisotropic sub pixel sampling with blur (look it up)
 	mGun->SetTexture(mCannonTex, sf::IntRect(0, 0, 156, 138));
@@ -18,7 +18,7 @@ void PlayMode::Init(Game *pG)
 	ball.SetPos(mGun->GetPos());
 
 
-	if (!mWallTex.loadFromFile("data/tiledwall.png"))
+	if (!mWallTex.loadFromFile("../data/tiledwall.png"))
 		assert(false);
 	mWallTex.setRepeated(true);
 	mWallTex.setSmooth(true);
