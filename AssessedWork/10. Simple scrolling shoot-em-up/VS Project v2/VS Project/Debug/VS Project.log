@@ -1,25 +1,5 @@
-﻿  Animation.cpp
-  Asteroid.cpp
+﻿  Singleton.h
   endState.cpp
-  Missile.cpp
-  d3d.cpp
-  d3dUtils.cpp
-  GameManager.cpp
-  Gamepad.cpp
-  Main.cpp
   menuState.cpp
-  MouseKeys.cpp
-  PlayerShip.cpp
-  playState.cpp
-c:\users\hexip\documents\github\oop4g\assessedwork\10. simple scrolling shoot-em-up\vs project v2\vs project\playstate.cpp(68): warning C4305: 'argument': truncation from 'double' to 'const float'
-c:\users\hexip\documents\github\oop4g\assessedwork\10. simple scrolling shoot-em-up\vs project v2\vs project\playstate.cpp(193): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\hexip\documents\github\oop4g\assessedwork\10. simple scrolling shoot-em-up\vs project v2\vs project\playstate.cpp(195): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Singleton.h
-  Sprite.cpp
-  TextureCache.cpp
-  WindowUtils.cpp
   Generating Code...
-c:\users\hexip\documents\github\oop4g\assessedwork\10. simple scrolling shoot-em-up\vs project v2\vs project\endstate.h(10): warning C4172: returning address of local variable or temporary: Instance
-c:\users\hexip\documents\github\oop4g\assessedwork\10. simple scrolling shoot-em-up\vs project v2\vs project\menustate.h(8): warning C4172: returning address of local variable or temporary: Instance
-  LINK : ../bin/VS Project.exe not found or not built by the last incremental link; performing full link
   VS Project.vcxproj -> C:\Users\hexip\Documents\GitHub\oop4g\AssessedWork\10. Simple scrolling shoot-em-up\VS Project v2\VS Project\../bin/VS Project.exe

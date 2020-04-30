@@ -110,7 +110,7 @@ void Game::UpdateAndRender(MyD3D& d3d) //update and render
 
 void Game::ReleaseGame()
 {
-		for (int i = 0; i < states.size(); i++)
+		for (unsigned int i = 0; i < states.size(); i++)
 		{
 			delete states.top();
 			states.top() = nullptr;

@@ -1,5 +1,8 @@
 #pragma once
 #include"stdafx.h"
+/*
+	base class for the states of the gambling dice game
+*/
 class State
 {
 protected:
@@ -14,8 +17,11 @@ protected:
 	{}
 public:
 	virtual void update()=0;
+	//add the character typed to the string that will 
+	//be displayed using text
 	void updateInput(sf::Event& event);
+	//allow the play to use the backspace key
+	//to delete the character on the end of the string
 	void backspace();
 	virtual int getNextScene()=0;
-	//virtual void render() = 0;
 };

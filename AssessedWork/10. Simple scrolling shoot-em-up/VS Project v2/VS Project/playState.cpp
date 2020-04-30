@@ -65,7 +65,7 @@ void playState::InitPlayer(d3d& _d3d)
 	Thrust.SetTex(*p);
 	Thrust.GetAnim().Init(0, 3, 15, true);
 	Thrust.GetAnim().Play(true);
-	Thrust.SetRotation(90 * 0.01745329252);
+	Thrust.SetRotation(90.f * 0.01745329252f);
 	//set player position
 	Player.SetPosition(DirectX::SimpleMath::Vector2(PlayArea.left + (Thrust.GetScreenSize().x*2), (h / 2) - (Player.GetScreenSize().y / 2.f)));
 
@@ -190,9 +190,9 @@ void playState::InitAsteroids(d3d& _d3d)
 	for (auto& a : Asteroids)
 	{
 		if ((rand() % 2 - 1) == 0)
-			a.spr.GetAnim().Init(0, 31, (rand() % 20 + 10), true);
+			a.spr.GetAnim().Init(0, 31, (float)(rand() % 20 + 10), true);
 		else
-			a.spr.GetAnim().Init(32, 63, (rand() % 20 + 10), true);
+			a.spr.GetAnim().Init(32, 63, (float)(rand() % 20 + 10), true);
 		a.spr.GetAnim().SetFrame((rand() % a.spr.GetAnim().GetEnd() + a.spr.GetAnim().GetStart()));
 		a.spr.GetAnim().Play(true);
 	}

@@ -42,7 +42,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance,
 	if (!d3d.InitDirect3D(OnResize))
 		assert(false);
 	WinUtil::Get().SetD3D(d3d);
-	d3d.GetCache().SetAssetPath("data/");
+	d3d.GetCache().SetAssetPath("../bin/data/");
 	gameManager::Get()->Init(d3d);
 	gameManager::Get()->Run(d3d);
 	d3d.ReleaseD3D(true);

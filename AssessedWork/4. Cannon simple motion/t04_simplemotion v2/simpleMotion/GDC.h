@@ -17,5 +17,5 @@ namespace GDC
 	const float BALL_SPEED{ 400.f };	//ball speed in units per sec
 	const float FIRE_DELAY{ 0.25f };	//stop on firing for this time in secs
 	const float CANNON_ROT_OFFSET{ 115 };	//when rotating the cannon, the barrel points at a specific angle (rotate anti-clockwise from horizontal)
-	const float DegToRadConversion{ 0.01745329252 }; //conversion rate of degress to radians
+	const float DegToRadConversion=0.01745329252f; //conversion rate of degress to radians
 };

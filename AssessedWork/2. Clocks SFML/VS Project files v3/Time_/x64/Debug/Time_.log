@@ -1,0 +1,10 @@
+﻿  AnClock.cpp
+c:\users\hexip\documents\github\oop4g\assessedwork\2. clocks sfml\vs project files v3\time_\anclock.h(2): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  DigClock.cpp
+c:\users\hexip\documents\github\oop4g\assessedwork\2. clocks sfml\vs project files v3\time_\digclock.h(2): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  gameManager.cpp
+c:\users\hexip\documents\github\oop4g\assessedwork\2. clocks sfml\vs project files v3\time_\gamemanager.h(2): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  main.cpp
+c:\users\hexip\documents\github\oop4g\assessedwork\2. clocks sfml\vs project files v3\time_\gamemanager.h(2): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Time.cpp
+  Generating Code...

@@ -5,7 +5,6 @@
 
 bool End::checkInput(int code)
 {
-	//refuse input
 	return(false);
 }
 
@@ -17,5 +16,5 @@ void End::update()
 int End::getNextScene()
 {
 	window.close(); //no more scenes, close application 
-	return(3);
+	return(0);
 }

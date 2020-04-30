@@ -1,1 +1,13 @@
-﻿  SFMLBaseProject.vcxproj -> C:\Users\hexip\Documents\GitHub\oop4g\AssessedWork\1. Sixes SFML\VS Project files v2\Debug\SFMLBaseProject.exe
+﻿  stdafx.cpp
+  Dice.cpp
+  End.cpp
+  Game.cpp
+  GameManager.cpp
+  main.cpp
+  NameInput.cpp
+  NumberInput.cpp
+  RandomNumberGenerator.cpp
+  Score.cpp
+  State.cpp
+  Generating Code...
+  SFMLBaseProject.vcxproj -> C:\Users\hexip\Documents\GitHub\oop4g\AssessedWork\1. Sixes SFML\VS Project files v2\Debug\SFMLBaseProject.exe

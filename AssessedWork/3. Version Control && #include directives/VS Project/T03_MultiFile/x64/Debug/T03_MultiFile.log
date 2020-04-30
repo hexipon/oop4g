@@ -1,26 +1,8 @@
-﻿  Game.cpp
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(7): error C3646: 'getName': unknown override specifier
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(7): error C2059: syntax error: '('
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(7): error C2238: unexpected token(s) preceding ';'
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(13): error C3646: 'name_': unknown override specifier
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\game.cpp(11): error C2039: 'getName': is not a member of 'Player'
-  c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(5): note: see declaration of 'Player'
+﻿  Dice.cpp
+  Game.cpp
   Player.cpp
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(7): error C3646: 'getName': unknown override specifier
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(7): error C2059: syntax error: '('
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(7): error C2238: unexpected token(s) preceding ';'
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(13): error C3646: 'name_': unknown override specifier
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.cpp(8): error C2039: 'getName': is not a member of 'Player'
-  c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(5): note: see declaration of 'Player'
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.cpp(8): error C2270: 'getName': modifiers not allowed on nonmember functions
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.cpp(9): error C2065: 'name_': undeclared identifier
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.cpp(24): error C2065: 'name_': undeclared identifier
-  Source.cpp
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(7): error C3646: 'getName': unknown override specifier
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(7): error C2059: syntax error: '('
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(7): error C2238: unexpected token(s) preceding ';'
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(13): error C3646: 'name_': unknown override specifier
-c:\users\b8010687\documents\oop4g-p4g\work\3. version control && #include directives\t03_sixesmultfile - copy\t03_multifile\player.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  RandomNumberGenerator.cpp
+  Score.cpp
+  main.cpp
   Generating Code...
+  T03_MultiFile.vcxproj -> C:\Users\hexip\Documents\GitHub\oop4g\AssessedWork\3. Version Control && #include directives\VS Project\x64\Debug\T03_MultiFile.exe

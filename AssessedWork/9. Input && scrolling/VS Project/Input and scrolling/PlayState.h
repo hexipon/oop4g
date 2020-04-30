@@ -17,9 +17,9 @@ private:
 	const float SPEED = 250;
 	const float MOUSE_SPEED = 5000;
 	const float PAD_SPEED = 250;
-	const float ConvertToRads{ 0.01745329252 };
+	const float ConvertToRads{ 0.01745329252f };
 	const float playerRotation{ 90 };
-	const DirectX::SimpleMath::Vector2 playerScale{ 0.1,0.1 };
+	const DirectX::SimpleMath::Vector2 playerScale{ 0.1f,0.1f };
 	d3d& _d3d;
 	std::vector<Sprite> Bgnd;
 	Sprite Player;

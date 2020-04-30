@@ -26,7 +26,7 @@ Time AnClock::getTime()
 
 void AnClock::update(float& deltaTime)
 {
-	float hour = AnTime.getHours();
+	float hour = (float)AnTime.getHours();
 	if (hour >= 12)
 		hour = hour - 12;
 	hour = hour + (AnTime.getMinutes() / 60.f);
@@ -53,12 +53,12 @@ void AnClock::render(MyD3D& d3d, DirectX::SpriteBatch& spritebatch)
 	spr.SetOrigin({ 33, 455 });
 	spr.SetTexRect({ 91,0,153,480 });
 	spr.SetPos(DirectX::SimpleMath::Vector2(position.x + 129, position.y + 129));
-	spr.setRotation(0.01745329252*bigHandRotation);
+	spr.setRotation(0.01745329252f*bigHandRotation);
 	spr.Draw(spritebatch);
 	spr.SetOrigin({ 49, 454.5f });
 	spr.SetTexRect({ 0,0,91,480 });
 	spr.SetPos(DirectX::SimpleMath::Vector2(position.x + 129, position.y + 129));
-	spr.setRotation(0.01745329252*smallHandRotation);
+	spr.setRotation(0.01745329252f*smallHandRotation);
 	spr.Draw(spritebatch);
 
 	font->DrawString(&spritebatch, writable, position);
