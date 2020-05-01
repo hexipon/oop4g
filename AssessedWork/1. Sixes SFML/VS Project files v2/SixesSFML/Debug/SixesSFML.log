@@ -1,0 +1,14 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SFMLBaseProject.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  stdafx.cpp
+  Dice.cpp
+  End.cpp
+  Game.cpp
+  GameManager.cpp
+  main.cpp
+  NameInput.cpp
+  NumberInput.cpp
+  RandomNumberGenerator.cpp
+  Score.cpp
+  State.cpp
+  Generating Code...
+  SixesSFML.vcxproj -> C:\Users\hexip\Documents\GitHub\oop4g\AssessedWork\1. Sixes SFML\VS Project files v2\Debug\SixesSFML.exe
