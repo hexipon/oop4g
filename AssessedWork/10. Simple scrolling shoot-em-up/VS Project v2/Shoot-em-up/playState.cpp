@@ -120,13 +120,12 @@ const void playState::updateMissiles(const float & deltaTime, d3d& _d3d)
 {
 	if ((GameManager::mouseAndKeyInput.IsPressed(VK_SPACE) || GameManager::GamepadInput.IsPressed(0, XINPUT_GAMEPAD_B)) && GetClock() > missileTimer)
 	{
-		Missile mis(_d3d);
-		mis.Init(_d3d);
-		mis.spr.GetAnim().Play(true);
-		mis.spr.SetPosition(DirectX::SimpleMath::Vector2(Player.GetPosition().x + Player.GetScreenSize().x, 
-			Player.GetPosition().y + (Player.GetScreenSize().y / 2) - (mis.spr.GetScreenSize().y / 2)));
-		mis.active = true;
-		Missiles.push_back(mis);
+		Missiles.push_back(Missile(_d3d));
+		Missiles.back().Init(_d3d);
+		Missiles.back().spr.GetAnim().Play(true);
+		Missiles.back().spr.SetPosition(DirectX::SimpleMath::Vector2(Player.GetPosition().x + Player.GetScreenSize().x,
+			Player.GetPosition().y + (Player.GetScreenSize().y / 2) - (Missiles.back().spr.GetScreenSize().y / 2)));
+		Missiles.back().active = true;
 		missileTimer = GetClock() + gameConstants::missile_debounce;
 	}
 	for (unsigned int i = 0; i < Missiles.size(); i++)
