@@ -27,6 +27,8 @@ public:
 		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "backgrounds/star2alpha.dds");
 		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "backgrounds/staticBackground.dds");
 		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "backgrounds/PauseBackground.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "backgrounds/LostBackground.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "backgrounds/WonBackground.dds");
 		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Player/PGreen.dds");
 		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Player/PBlue.dds");
 		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Player/POrange.dds");
@@ -41,6 +43,30 @@ public:
 		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Boss/BRED.dds");
 		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Boss/BYELLOW.dds");
 		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "TopBar.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "PowerUps/shieldPowerUpHigher.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "PowerUps/shieldPowerUpLower.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "PowerUps/healthPowerUpHigher.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "PowerUps/healthPowerUpLower.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "PowerUps/bulletPowerUpHigher.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "PowerUps/bulletPowerUpLower.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Blockade/BlockadeGreen.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Blockade/BlockadeBlue.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Blockade/BlockadeOrange.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Blockade/BlockadePurple.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Blockade/BlockadeRed.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Blockade/BlockadeYellow.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy2/E2Green.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy2/E2Blue.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy2/E2Orange.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy2/E2Purple.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy2/E2Red.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy2/E2Yellow.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy3/E3Green.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy3/E3Blue.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy3/E3Orange.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy3/E3Purple.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy3/E3Red.dds");
+		_d3d.GetCache().LoadTexture(&_d3d.GetDevice(), "Enemy3/E3Yellow.dds");
 		const RECTF playerBulletAnim[4]{
 			{ 211,  8, 222, 18},
 			{ 228, 8, 243, 18 },

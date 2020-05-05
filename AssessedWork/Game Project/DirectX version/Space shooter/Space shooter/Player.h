@@ -12,9 +12,8 @@ private:
 	const std::string textures[6]={ {"PGreen"},{"PBlue"},{"PPurple"},{"PRed"},{"POrange"},{"PYellow"} };
 	std::vector<Bullet>& bullets;
 	float missileTimer = 0.0f;
-	const float missile_debounce = 0.15f;
+	float missile_debounce = 0.5f;
 	Shield shield;
-	const float shieldLength = 10.f;
 	const void colourChangeLeft();
 	const void colourChangeRight();
 	const void checkBorders();
@@ -24,9 +23,6 @@ public:
 		DirectX::SimpleMath::Vector4& _PlayArea, std::vector<Bullet>& _bullets) :
 		Ship(d3d_, spritebatch_, deltaTime_), PlayArea(_PlayArea),
 		shield(_d3d,_spritebatch,deltaTime), bullets(_bullets) {
-
-		shield.changeMode(colour);
-		shield.activate(10.f);
 
 		ship.SetTex(*_d3d.GetCache().Get(textures[colour]).pTex);
 		ship.SetScale(DirectX::SimpleMath::Vector2(gameData::Get().WindowSize.x / gameData::Get().MaxWindowSize.x, gameData::Get().WindowSize.y / gameData::Get().MaxWindowSize.y));
@@ -42,7 +38,7 @@ public:
 	const bool checkCollision(const Sprite & sprite) override;
 
 	const void init() override{}
-	const void activateShield() {
+	const void activateShield(const float shieldLength) {
 		shield.changeMode(colour);
 		shield.activate(shieldLength);
 	}
@@ -51,6 +47,17 @@ public:
 	}
 	DirectX::SimpleMath::Vector2 GetScreenSize() const {
 		return ship.GetScreenSize();
+	}
+	const void increaseHealth(const float healthincrease) {
+			health += healthincrease;
+			if (health > 500.f)
+				health = 500.f;
+	}
+	const void increaseFireRate(const float fireincrease) {
+		if(!(missile_debounce<=0.05))
+		 missile_debounce -= fireincrease;
+		if (missile_debounce < 0.05)
+			missile_debounce = 0.05f;
 	}
 };
 

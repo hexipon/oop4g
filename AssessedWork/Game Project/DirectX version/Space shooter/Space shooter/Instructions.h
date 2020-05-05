@@ -20,7 +20,7 @@ public:
 		menuItems->at(Back).setString("Back");
 		menuItems->at(Back).SetColour(Colours::Green);
 		menuItems->at(Exit).setString("Exit");
-		background.SetTex(*_d3d.GetCache().Get("staticBackground").pTex);
+		background.SetTex(*_d3d.GetCache().Get("PauseBackground").pTex);
 		sizeSetup();
 	}
 	~Instructions() {

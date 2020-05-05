@@ -226,8 +226,6 @@ const void Boss::hasCollided(const int _colour)
 	default:
 		break;
 	}
-	if (health <= 0)
-		Manager::Get().changeState(Manager::gameStates::EndGame);
 	return void();
 }
 

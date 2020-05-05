@@ -2,6 +2,7 @@
 #include"State.h"
 #include"Text.h"
 #include"Sprite.h"
+#include"Player.h"
 class End : public State
 
 {
@@ -18,7 +19,10 @@ public:
 		menuItems->at(PlayAgain).SetColour(Colours::Green);
 		menuItems->at(Menu).setString("Exit To Main Menu");
 		menuItems->at(Exit).setString("Exit To Windows");
-		background.SetTex(*_d3d.GetCache().Get("PauseBackground").pTex);
+		if(Player::Get().getHealth() <= 0)
+			background.SetTex(*_d3d.GetCache().Get("LostBackground").pTex);
+		else
+			background.SetTex(*_d3d.GetCache().Get("WonBackground").pTex);
 		sizeSetup();
 		background.setColour(DirectX::SimpleMath::Vector4(1, 1, 1, 0.75f));
 	}

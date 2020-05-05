@@ -70,5 +70,13 @@ public:
 	const int getColour() {
 		return colour;
 	}
+	Bullet& operator=(const Bullet& rhs) {
+		colour = rhs.colour;
+		spr = rhs.spr;
+		deltaTime = rhs.deltaTime;
+		aditionalSpeed = rhs.aditionalSpeed;
+		active = rhs.active;
+		return *this;
+	}
 };
 

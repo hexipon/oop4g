@@ -21,6 +21,7 @@ protected:
 	float speed = 75.f;
 	DirectX::SimpleMath::Vector2 Velocity;
 	std::vector<Bullet> bullets;
+	DirectX::SimpleMath::Vector2 destination;
 	const void moveUp();
 	const void moveDown();
 	const void moveLeft();
@@ -32,8 +33,9 @@ public:
 	Ship(d3d& d3d_, DirectX::SpriteBatch& spritebatch_, float& deltaTime_) : _d3d(d3d_),
 		_spritebatch(spritebatch_), deltaTime(deltaTime_), ship(_d3d)
 	{
-
+		active = true;
 	}
+	bool active = false;
 	const void changeMaxVel();
 	const void changeAccelleration();
 	virtual const void update() =0;
@@ -48,6 +50,16 @@ public:
 	const float getHealth() {
 		return health;
 	}
+	void setPostion(const DirectX::SimpleMath::Vector2& pos)
+	{
+		ship.SetPosition(pos);
+	}
+	void setDestination(const DirectX::SimpleMath::Vector2& _destination) {
+		destination = _destination;
+	}
 
+	const Sprite& GetSprite() {
+		return ship;
+	}
 };
 

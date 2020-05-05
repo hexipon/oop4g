@@ -65,7 +65,7 @@ const void Player::update()
 
 	if (shield.isActive())
 		shield.update(DirectX::SimpleMath::Vector2(ship.GetPosition().x-(20 * (gameData::Get().WindowSize.x / gameData::Get().MaxWindowSize.x)), ship.GetPosition().y));
-
+	
 	return void();
 }
 
@@ -213,8 +213,6 @@ const void Player::hasCollided(const int _colour)
 		}
 	}
 
-	if (health <= 0)
-		Manager::Get().changeState(Manager::gameStates::EndGame);
 
 	return void();
 }
@@ -233,24 +231,24 @@ const bool Player::checkCollision(const Sprite & sprite)
 
 const void Player::checkBorders()
 {
-	if (ship.GetPosition().y > gameData::Get().WindowSize.y - ship.GetScreenSize().y) //bottom boundary
+	if (ship.GetPosition().y > PlayArea.z - ship.GetScreenSize().y) //bottom boundary
 	{
-		ship.SetPosition(DirectX::SimpleMath::Vector2(ship.GetPosition().x, gameData::Get().WindowSize.y - ship.GetScreenSize().y));
+		ship.SetPosition(DirectX::SimpleMath::Vector2(ship.GetPosition().x, PlayArea.z - ship.GetScreenSize().y));
 		Velocity.y = 0.f;
 	}
-	if (ship.GetPosition().x > gameData::Get().WindowSize.x - ship.GetScreenSize().x) //right boundary
+	if (ship.GetPosition().x > PlayArea.y - ship.GetScreenSize().x) //right boundary
 	{
-		ship.SetPosition(DirectX::SimpleMath::Vector2(gameData::Get().WindowSize.x - ship.GetScreenSize().x, ship.GetPosition().y));
+		ship.SetPosition(DirectX::SimpleMath::Vector2(PlayArea.y - ship.GetScreenSize().x, ship.GetPosition().y));
 		Velocity.x = 0.f;
 	}
-	if (ship.GetPosition().y <= 0) //top boundary
+	if (ship.GetPosition().y <= PlayArea.x) //top boundary
 	{
-		ship.SetPosition(DirectX::SimpleMath::Vector2(ship.GetPosition().x, 0));
+		ship.SetPosition(DirectX::SimpleMath::Vector2(ship.GetPosition().x, PlayArea.x));
 		Velocity.y = 0.f;
 	}
-	if (ship.GetPosition().x <= 0) //left boundary
+	if (ship.GetPosition().x <= PlayArea.w) //left boundary
 	{
-		ship.SetPosition(DirectX::SimpleMath::Vector2(0, ship.GetPosition().y));
+		ship.SetPosition(DirectX::SimpleMath::Vector2(PlayArea.w, ship.GetPosition().y));
 		Velocity.x = 0.f;
 	}
 	return void();

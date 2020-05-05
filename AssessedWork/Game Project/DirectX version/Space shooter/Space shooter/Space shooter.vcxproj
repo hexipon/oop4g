@@ -131,12 +131,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Blockade.cpp" />
     <ClCompile Include="Boss.cpp" />
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="d3d.cpp" />
     <ClCompile Include="d3dUtils.cpp" />
     <ClCompile Include="End.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Enemy2.cpp" />
     <ClCompile Include="Gamepad.cpp" />
     <ClCompile Include="Instructions.cpp" />
     <ClCompile Include="main.cpp" />
@@ -147,7 +149,6 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Playing.cpp" />
     <ClCompile Include="powerUp.cpp" />
-    <ClCompile Include="Score.cpp" />
     <ClCompile Include="Settings.cpp" />
     <ClCompile Include="Shield.cpp" />
     <ClCompile Include="Ship.cpp" />
@@ -158,12 +159,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="Blockade.h" />
     <ClInclude Include="Boss.h" />
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="d3d.h" />
     <ClInclude Include="d3dUtils.h" />
     <ClInclude Include="End.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Enemy2.h" />
     <ClInclude Include="FontCache.h" />
     <ClInclude Include="gameData.h" />
     <ClInclude Include="Gamepad.h" />
@@ -175,7 +178,6 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="Playing.h" />
     <ClInclude Include="powerUp.h" />
-    <ClInclude Include="Score.h" />
     <ClInclude Include="Settings.h" />
     <ClInclude Include="Shield.h" />
     <ClInclude Include="Ship.h" />

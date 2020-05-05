@@ -3,6 +3,8 @@
 
 void Menu::update()
 {
+	for(unsigned int i=0; i<background->size();)
+		background->at(i).Scroll((_deltaTime*++i) * 20, 0);
 	if (selectionChangeCooldownTimer >= selectionChangeCooldown)
 	{
 	const bool _enterPressed =
@@ -42,8 +44,6 @@ void Menu::update()
 		selectionChangeCooldownTimer += _deltaTime;
 	}
 
-	for(unsigned int i=0; i<background->size();)
-		background->at(i).Scroll((_deltaTime*++i) * 20, 0);
 
 	return void();
 }

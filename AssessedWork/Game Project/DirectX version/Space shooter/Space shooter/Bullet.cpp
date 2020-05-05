@@ -12,10 +12,10 @@ void Bullet::Update()
 	if (spr.GetPosition().x > WindowUtils::Get().GetClientWidth())
 		active = false;
 	spr.GetAnim().Update(deltaTime);
-	if (spr.GetPosition().x > gameData::Get().WindowSize.x)
+	if (spr.GetPosition().x > gameData::Get().WindowSize.x || spr.GetPosition().x < 0)
 	{
 		active = false;
-		//bad work around as trying to erase an element from the vector keeps giving me xutility errors
+	
 	}
 
 }

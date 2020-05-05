@@ -46,7 +46,7 @@ void Pause::render()
 void Pause::sizeSetup()
 {
 	background.SetScale({ gameData::Get().WindowSize.x / gameData::Get().MaxWindowSize.x,gameData::Get().WindowSize.y / gameData::Get().MaxWindowSize.y });
-	gameName.SetPosition({ 0, gameData::Get().WindowSize.y*0.17f });
+	gameName.SetPosition({ 0, gameData::Get().WindowSize.y*0.25f });
 	gameName.SetScale({ gameData::Get().WindowSize.x / gameData::Get().MaxWindowSize.x,gameData::Get().WindowSize.y / gameData::Get().MaxWindowSize.y });
 	menuItems->at(Continue).SetScale({ gameData::Get().WindowSize.x / gameData::Get().MaxWindowSize.x,gameData::Get().WindowSize.y / gameData::Get().MaxWindowSize.y });
 	menuItems->at(Exit).SetScale({ gameData::Get().WindowSize.x / gameData::Get().MaxWindowSize.x,gameData::Get().WindowSize.y / gameData::Get().MaxWindowSize.y });
