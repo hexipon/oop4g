@@ -23,13 +23,13 @@ private:
 	std::vector<powerUp> powerUps;
 	const void updateBackground();
 	topBar bar;
-	const float powerUpRate = 7.f;
+	const float powerUpRate = 5.f;
 	float powerUpTimer = powerUpRate;
-	const float blockadeRate = 17.f;
+	const float blockadeRate = 10.f;
 	float blockadeTimer = blockadeRate;
-	const float enemy1Rate = 40.f;
+	const float enemy1Rate = 20.f;
 	float enemy1Timer = enemy1Rate;
-	const float enemy2Rate = 60.f;
+	const float enemy2Rate = 40.f;
 	float enemy2Timer = enemy2Rate;
 
 public:

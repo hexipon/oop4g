@@ -1,12 +1,31 @@
-﻿  Boss.cpp
+﻿  Animation.cpp
+  Blockade.cpp
+  Boss.cpp
+  Bullet.cpp
   End.cpp
+  Enemy.cpp
+  Enemy2.cpp
+  Gamepad.cpp
   Instructions.cpp
   Manager.cpp
   Menu.cpp
+  MouseKeys.cpp
   Pause.cpp
   Player.cpp
   Playing.cpp
   Settings.cpp
-  main.cpp
+  Shield.cpp
+  Ship.cpp
+  Sprite.cpp
+  State.cpp
   Generating Code...
+  Compiling...
+  TextureCache.cpp
+  WindowUtils.cpp
+  d3d.cpp
+  d3dUtils.cpp
+  main.cpp
+  powerUp.cpp
+  Generating Code...
+  LINK : ../bin/Space shooter.exe not found or not built by the last incremental link; performing full link
   Space shooter.vcxproj -> C:\Users\hexip\Documents\GitHub\oop4g\AssessedWork\Game Project\DirectX version\Space shooter\Space shooter\../bin/Space shooter.exe

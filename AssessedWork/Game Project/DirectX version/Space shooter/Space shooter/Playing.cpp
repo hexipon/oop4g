@@ -94,11 +94,11 @@ void Playing::update()
 
 
     spawnPowerUp();
-	if (GetClock() > 30.f)
+	if (GetClock() > 40.f && GetClock() < 120.f)
 		spawnBlockade();
-	if (GetClock() > 60.f)
+	if (GetClock() > 60.f &&  GetClock() < 200.f)
 		spawnEnemy1();
-	if (GetClock() > 120.f)
+	if (GetClock() > 90.f )
 		spawnEnemy2();
 
 	if (player.getHealth() <= 0 || Boss::Get().getHealth() <=0)

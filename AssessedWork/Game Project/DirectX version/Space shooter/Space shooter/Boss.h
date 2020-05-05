@@ -24,7 +24,7 @@ public:
 		ship.SetScale(DirectX::SimpleMath::Vector2(gameData::Get().WindowSize.x / gameData::Get().MaxWindowSize.x, gameData::Get().WindowSize.y / gameData::Get().MaxWindowSize.y));
 		speed = 40.f;
 		ship.SetPosition(DirectX::SimpleMath::Vector2(gameData::Get().WindowSize.x + ship.GetScreenSize().x * 1.5f, (PlayArea.z / 2) - (ship.GetScreenSize().y / 2.f)));
-		health = 2300.f;
+		health = 1500.f;
 		
 	}
 	const void init() override{
